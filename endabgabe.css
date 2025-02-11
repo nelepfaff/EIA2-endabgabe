@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+canvas { /* Canvas für das Feuerwerk */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+.controls { /* Steuerungselemente für die Raketen */
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feuerwerk App</title>
+    <link rel="stylesheet" href="endabgabe.css">
+    <script src="endabgabe.js" type="module"></script>
+</head>
+<body>
+    <!-- Canvas-Element für die Darstellung des Feuerwerks -->
+    <canvas id="fireworkCanvas"></canvas>
+
+    <!-- Steuerungselemente für die Anpassung der Raketenparameter -->
+    <div class="controls">
+        <input type="number" id="radius" placeholder="Radius" value="50"> <!-- Eingabefeld für den Radius der Rakete -->
+        <input type="number" id="particles" placeholder="Partikelanzahl" value="100"> <!-- Eingabefeld für die Anzahl der Partikel -->
+        <input type="color" id="color" value="#ff0000"> <!-- Farbwähler für die Raketenfarbe -->
+
+        <!-- Dropdown-Menü zur Auswahl des Raketentyps -->
+        <select id="rocketType">
+            <option value="circle">Kreis</option>
+            <option value="star">Stern</option>
+            <option value="spiral">Spirale</option>
+        </select>
+
+        <!-- Button zum Starten der Raketen -->
+        <button id="launchRocket">Raketen starten</button>
+
+        <!-- Button zum Speichern der aktuellen Raketenparameter -->
+        <button id="saveRocket">Rakete speichern</button>
+    </div>
+ 
+</body>
+</html>
